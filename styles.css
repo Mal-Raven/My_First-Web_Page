@@ -1,0 +1,233 @@
+
+/* This styles the entire body of the page*/
+body {
+    background-color: rgb(228, 216, 201);
+    padding: 0;
+    margin: 0;
+}
+
+/*This style the content-container section*/
+.content-container {
+    background-color: rgb(19, 146, 57);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*This styles the <header> tag */
+header {
+    padding: 10px 40px;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: -10px;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium'
+}
+
+
+
+/*This styles elements with the class "head" */
+ .head {
+    font-family: 'Franklin Gothic Medium';
+    background-color: white;
+    padding: 10px 10px;
+    color: rgb(19, 146, 57);
+    border-radius: 20px;
+    margin: 40px 10px; 
+    text-align: center;
+    display: inline-block;
+    min-width: 100px;
+    
+}  
+/*This styles the class 'head' when the mouse hovers over the area*/
+.head:hover {
+    background-color: orange;
+}
+
+/* This styles the hamburger <div> which is designed to only display on smaller screens*/
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.hamburger span {
+    background-color: white;
+    height: 2px;
+    width: 25px;
+}
+ 
+/*This styles the Introduction section*/
+.container1 {
+    
+    margin: 20px;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: nowrap;   
+}
+
+.intro{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    width: 50%;
+}
+.intro h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    line-height: 30px;
+    font-size: 20px;
+    padding-right: 10%;
+}
+/*This styles the sidebar*/
+.sidebar{
+    background-color: rgb(168, 244, 175);
+    padding: 20px;
+    width: 300px;
+    margin: 0px 20px 0px 20px;  
+}
+.below{
+    margin:0px 20px;
+    width: auto;
+    display: none;
+}
+.below input{
+    width: 50%;
+}
+
+/*This styles the <label> tag*/
+label {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 100%;
+    color: rgb(19, 146, 57);
+    
+} 
+
+/*This styles the <input> element area*/
+input {
+    width: 70%;
+    height: 2px;
+    font-size: 15px;
+    padding: 10px;
+    border-color: rgb(0, 0, 0);
+}
+
+/*This styles the elements with "service-header id" */
+#service-header{
+    text-align: center;
+    background-color: rgb(19, 146, 57);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 30px 100px;
+    border-radius: 20px;
+    padding: 20px 0px;    
+}
+
+/*This styles the <h3> tag under the <div>*/
+div h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(19, 146, 57);
+    background-color: white;
+    text-align: center;
+    margin: 10px 20% 20px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 25px;
+}
+
+div h3:hover {
+    background-color: orange;
+}
+
+/*This styles elements with the class "services" */
+.services{
+    padding: 20px; 
+    margin-top: -10px;
+    
+}
+/*This styles the image tag under the <div>*/
+div img{
+    width: 550px;
+    border-radius: 20px;
+    height: 350px;
+    max-width: 100%;
+    max-height: fit-content;
+    background-color: white;
+    
+}
+
+/*This styles the section with the class "container2" */
+.container2{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10%;
+    
+}
+
+div p{
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* This is the footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: 1rem;
+}
+
+/* Responsive styling*/
+@media (max-width: 768px) {
+    .content {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .container1, .container2 {
+
+        flex-direction: column;
+    }
+
+    .intro{
+        width: auto;
+    }
+
+    .sidebar {
+      display: none;
+    }
+    .below{
+        display: block;
+    }
+}
+@media (max-width: 480px) {
+    
+    .sidebar {
+        display: none;
+    }
+    .content{
+        flex: 1 1 30%
+    }
+    .below {
+    display: block
+    }
+
+}    
